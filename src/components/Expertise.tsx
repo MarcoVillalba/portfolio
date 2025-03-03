@@ -44,7 +44,7 @@ export const Expertise = ()=> {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Frontend</h3>
-                    <p>He contruído una gran diversidad de aplicaciones web de principio a fin utilizando una variedad de tecnologías modernas con enfoque mobile first y siempre priorizando la experiencia del usuario como enfoque constante.</p>
+                    <p>Con un enfoque mobile first y siempre priorizando la experiencia del usuario, llevé adelante el desarrollo de múltiples proyectos de gran escala.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -69,7 +69,7 @@ export const Expertise = ()=> {
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>Data Base & DevOps</h3>
                     <p>Poseo fuertes conocimentos en bases de datos y PLSQL, para el armado de consultas y procesos almacenados en los motores de DB más populares del mercado. <br/>
-                    Además de eso, tengo conocimientos en el versionado de aplicaciones y despliegue de las mismas.</p>
+                    Además, puedo optimizar aplicaciones, mejorando el versionado y despliegue de las mismas.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
