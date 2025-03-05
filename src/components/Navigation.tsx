@@ -46,24 +46,44 @@ export const Navigation = ({parentToChild, modeChange}: any) => {
   }, []);
 
   const scrollToSection = (section: string) => {
-    console.log(section)
     const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
+
+    if (expertiseElement)
       expertiseElement.scrollIntoView({ behavior: 'smooth' });
-    } else {
+    else
       console.error('Element with id not found', section);
-    }
   };
 
   const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
-      <Divider />
+    <Box
+      className="navigation-bar-responsive"
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: "center",
+        backgroundColor: mode === "dark" ? "#0d1116" : "#fff",
+        color: "#fff",
+        height: "100vh",
+      }}
+    >
+      <p className="mobile-menu-top" style={{ color: mode === "dark" ? "#ffffff" : "#000000" }}>
+        <ListIcon />
+        Menu
+      </p>
+      <Divider sx={{ backgroundColor: mode === "dark" ? "#fff" : "#000000" }} />
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
+            <ListItemButton
+              sx={{
+                textAlign: "center",
+                color: mode === "dark" ? "#fff" : "#000000",
+                '&:hover': {
+                  backgroundColor: mode === "dark" ? "#212121" : "#868686",
+                },
+              }}
+              onClick={() => scrollToSection(item[1])}
+            >
+              <ListItemText primary={item[0]}/>
             </ListItemButton>
           </ListItem>
         ))}

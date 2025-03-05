@@ -11,6 +11,7 @@ import {
 import FadeIn from './components/FadeIn';
 import './index.scss';
 import About from "./components/About";
+import BackToTop from "./components/BackToTop";
 
 export const App = () => {
     const [mode, setMode] = useState<string>('dark');
@@ -36,6 +37,7 @@ export const App = () => {
             <Timeline/>
             {/*<Project/>*/}
             <Contact/>
+            <BackToTop/>
         </FadeIn>
         <Footer />
     </div>
