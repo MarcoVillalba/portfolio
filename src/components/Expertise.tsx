@@ -23,7 +23,8 @@ const labelsSecond = [
     "Laravel",
     "Codeigniter",
     "Moodle",
-    "Strapi"
+    "Strapi",
+    "Contentful",
 ];
 
 const labelsThird = [

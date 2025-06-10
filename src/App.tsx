@@ -3,7 +3,6 @@ import {
   Main,
   Timeline,
   Expertise,
-  Project,
   Contact,
   Navigation,
   Footer,
@@ -35,7 +34,6 @@ export const App = () => {
             <About/>
             <Expertise/>
             <Timeline/>
-            {/*<Project/>*/}
             <Contact/>
             <BackToTop/>
         </FadeIn>
